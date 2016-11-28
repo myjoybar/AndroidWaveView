@@ -1,6 +1,6 @@
 # AndroidWaveView
 
-具有逼真波浪效果的视图，可随Android 方向传感器自动改变效果，可设置水波高度，振幅，频率
+具有高度逼真波浪效果的视图，可随Android方向传感器360°自动改变效果，可设置水波高度，振幅，频率
 
 ## Demo效果图
  ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot1.png) 
