@@ -29,7 +29,7 @@ public class WaveBallView extends View {
     private Bitmap bg;// 目标图片
 
     private float waveY;// 上升的高度
-    private float waveYPercent = 0.5f;//波浪高度所占背景的百分比；0.0-1.0之间
+    private float waveYPercent = 0.0f;//波浪高度所占背景的百分比；0.0-1.0之间
     private float waveHeight = 10;// 默认波幅
     private float waveHeightPercent = 0.1f;//波幅所占整个高度的百分比；0.0-0.12之间,最大为0.1，否则会失真
 
@@ -187,10 +187,6 @@ public class WaveBallView extends View {
 
     public void calculatePoint() {
         waveY =height*(1f-waveYPercent);
-        // 目前未处理waveY为高度一半的情况
-//		if ((waveY - 1 / 2f * height) == 0) {
-//			waveY = waveY + 1.0f;
-//		}
         //以bg中心为圆心建立直角坐标系，计算4个点距离X轴的高度
         p0H = Math.abs(waveY - 1 / 2f * height);
         p1H = 0f;
@@ -329,9 +325,10 @@ public class WaveBallView extends View {
 
     }
 
+    int maxWidthNum;
     public void intRightOffset() {
         //int maxWidthNum = (int)width;
-        int maxWidthNum =(int) (width *Math.sin((waveYPercent*180)* Math.PI / 180));
+        maxWidthNum =(int) (width *Math.sin((waveYPercent*180)* Math.PI / 180));
         aArray = new Float[maxWidthNum];
         //int widthNum  = ScreenUtils.convertPx2Dip(width);
         Float min = -maxWidthNum/4f;
@@ -359,9 +356,15 @@ public class WaveBallView extends View {
         @Override
         public void run() {
             while (isRun) {
+
+                if(null==aArray ||aArray.length==0){
+                    return;
+                }
+
                 rightOffset = aArray[i];
                 i++;
-                if (i == (int)width) {
+
+                if (i == maxWidthNum) {
                     i = 0;
                 }
 
