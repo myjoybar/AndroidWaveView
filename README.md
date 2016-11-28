@@ -30,7 +30,7 @@
         setWaveZOffset(waveBallView5, (float) -angle, 0.08f, 0.65f);
         setWaveZOffset(waveBallView6, (float) -angle, 0.08f, 0.80f);
         setWaveZOffset(waveBallView7, (float) -angle, 0.08f, 0.95f);
-        s
+        
 ```
 
     Copyright 2016 MyJoybar
