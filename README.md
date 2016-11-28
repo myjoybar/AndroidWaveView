@@ -3,12 +3,12 @@
 具有逼真波浪效果的视图，可随Android 方向传感器自动改变效果，可设置水波高度，振幅，频率
 
 ## Demo效果图
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot1.png) 
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot2.png) 
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot3.png) 
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot4.png) 
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot5.png) 
- ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/screenshot6.png)  
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot1.png) 
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot2.png) 
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot3.png) 
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot4.png) 
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot5.png) 
+ ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot6.png)  
 
  
 
