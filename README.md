@@ -10,9 +10,28 @@
  ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot5.png) 
  ![image](https://github.com/myjoybar/AndroidWaveView/blob/master/screenshots/Screenshot6.png)  
 
- 
+ ## 单选或者多选的实现代码
 
-## License
+## Sample Usage
+```java
+    private void setWaveZOffset(WaveBallView waveBallView, float orientationOffset,float heightPercent,float yPercent){
+        waveBallView.setOrientationOffset(orientationOffset);
+        waveBallView.setWaveYPercent(yPercent);
+        waveBallView.setWaveHeightPercent(heightPercent);
+        waveBallView.postInvalidate();
+    }
+```
+
+
+        setWaveZOffset(waveBallView1, (float) -angle, 0.08f, 0.02f);
+        setWaveZOffset(waveBallView2, (float) -angle, 0.08f, 0.25f);
+        setWaveZOffset(waveBallView3, (float) -angle, 0.08f, 0.40f);
+        setWaveZOffset(waveBallView4, (float) -angle, 0.08f, 0.50f);
+        setWaveZOffset(waveBallView5, (float) -angle, 0.08f, 0.65f);
+        setWaveZOffset(waveBallView6, (float) -angle, 0.08f, 0.80f);
+        setWaveZOffset(waveBallView7, (float) -angle, 0.08f, 0.95f);
+        s
+```
 
     Copyright 2016 MyJoybar
 

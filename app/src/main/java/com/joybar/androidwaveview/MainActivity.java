@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+    @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
 
@@ -159,10 +163,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     }
 
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int i) {
-
-    }
 
     private void setWaveZOffset(WaveBallView waveBallView, float orientationOffset,float heightPercent,float yPercent){
         waveBallView.setOrientationOffset(orientationOffset);
